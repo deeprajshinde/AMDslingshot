@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alpha Intelligence - HealthyKhana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1b1c1a",
+                        "on-secondary-fixed-variant": "#444b00",
+                        "on-surface-variant": "#414844",
+                        "surface": "#fbf9f5",
+                        "surface-tint": "#3f6653",
+                        "primary-fixed-dim": "#a5d0b9",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#6d230f",
+                        "outline": "#717973",
+                        "tertiary": "#4f0e00",
+                        "inverse-surface": "#30312e",
+                        "secondary-fixed": "#dfec60",
+                        "inverse-primary": "#a5d0b9",
+                        "error-container": "#ffdad6",
+                        "primary": "#012d1d",
+                        "surface-bright": "#fbf9f5",
+                        "primary-fixed": "#c1ecd4",
+                        "surface-container-low": "#f5f3ef",
+                        "on-secondary-container": "#616a00",
+                        "on-tertiary-container": "#f3896d",
+                        "outline-variant": "#c1c8c2",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#dfec60",
+                        "surface-dim": "#dbdad6",
+                        "on-tertiary-fixed-variant": "#7c2e19",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f2f0ed",
+                        "background": "#fbf9f5",
+                        "primary-container": "#1b4332",
+                        "on-secondary-fixed": "#1a1d00",
+                        "surface-container-high": "#eae8e4",
+                        "secondary": "#5b6300",
+                        "on-primary-fixed-variant": "#274e3d",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e4e2de",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#ffdbd2",
+                        "on-primary-fixed": "#002114",
+                        "on-surface": "#1b1c1a",
+                        "on-tertiary-fixed": "#3c0800",
+                        "surface-container": "#efeeea",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e4e2de",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#86af99",
+                        "tertiary-fixed-dim": "#ffb4a1",
+                        "secondary-fixed-dim": "#c2cf47"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom hide scrollbar */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="w-full sticky top-0 z-50 bg-[#fbf9f5] dark:bg-emerald-950/20 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high">
+<img alt="user profile photo" class="w-full h-full object-cover" data-alt="professional portrait of a healthy young woman with soft natural lighting and a neutral studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrvpAZefSgIkSmy0HXRKyZkr1WogL0iv8ZQnlBKMnQsK5D0oYWOSxSjDAQxDJpNBdRk2G86sbkT8YWinFLIAYhnxnsNz97MUIrMKHhPCiXj5HLkhL88EscLSWDC8JP3YZicoo1T0mYJfIY_poav3h-gXrVI7RwcEdZAu_fqk9Vm0i31uCkHyRSilcgRDnWGPQ36N1IvJ8KwY4XilKVJoGLi6oHqM6ucpbpGZyNYrTeEOtw6q8lBQAFEalUrHPYSf0v4qTtlNxuSpbH"/>
+</div>
+<span class="font-serif italic text-2xl text-[#1b4332] dark:text-[#a5d0b9]">HealthyKhana</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-[#f5f3ef] dark:hover:bg-emerald-900/30 transition-colors scale-95 active:duration-150">
+<span class="material-symbols-outlined text-[#1b4332] dark:text-[#a5d0b9]">notifications</span>
+</button>
+</div>
+</header>
+<main class="max-w-screen-xl mx-auto px-6 pt-8 pb-12">
+<!-- Editorial Header -->
+<section class="mb-12">
+<span class="font-sans text-[11px] font-bold uppercase tracking-[0.2em] text-secondary mb-2 block">System Status: Active</span>
+<h1 class="text-5xl md:text-7xl font-bold tracking-tight text-primary leading-tight max-w-2xl">
+                Alpha <span class="italic font-normal">Intelligence</span>
+</h1>
+<p class="text-on-surface-variant text-lg mt-4 max-w-lg leading-relaxed">
+                Your goals aren't static. Our neural engine recalibrates your nutritional roadmap based on real-time physiological data.
+            </p>
+</section>
+<!-- Actionable Insight (Highlighted) -->
+<section class="mb-12">
+<div class="bg-primary-container text-on-primary-container p-8 md:p-12 rounded-lg relative overflow-hidden group">
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-secondary/10 rounded-full blur-3xl transition-transform duration-700 group-hover:scale-125"></div>
+<div class="relative z-10 flex flex-col md:flex-row gap-8 items-start">
+<div class="bg-secondary-container text-on-secondary-container p-4 rounded-xl shrink-0">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<div>
+<h3 class="text-2xl font-serif font-bold text-white mb-3">Today's Recalibration</h3>
+<p class="text-on-primary-container text-xl leading-relaxed font-light">
+                            "Your sleep was low (<span class="font-bold text-secondary-fixed">5h 12m</span>). To compensate for metabolic stress and maintain cognitive focus, we have <span class="italic underline decoration-secondary">increased your Carb budget by 15%</span> and adjusted your caffeine window."
+                        </p>
+<div class="mt-6 flex flex-wrap gap-3">
+<span class="bg-white/10 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">+240kcal Adjusted</span>
+<span class="bg-white/10 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Cortisol Recovery Mode</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Layout for Main Content -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- What-If Simulator (Toggle Section) -->
+<section class="lg:col-span-7 bg-surface-container-low rounded-lg p-8">
+<div class="flex justify-between items-center mb-10">
+<h2 class="text-2xl font-serif font-bold text-primary">"What-If" Simulator</h2>
+<span class="material-symbols-outlined text-outline">info</span>
+</div>
+<div class="flex flex-col gap-8">
+<!-- Toggle Switch Area -->
+<div class="bg-surface-container-lowest p-2 rounded-full flex items-center relative h-16 shadow-sm">
+<!-- Active Indicator (Sliding Background) -->
+<div class="absolute inset-y-1 left-1 w-[48%] bg-primary rounded-full transition-all duration-500 ease-in-out"></div>
+<button class="flex-1 relative z-10 text-sm font-bold uppercase tracking-widest text-white h-full transition-colors duration-500">
+                            Aggressive Weight Loss
+                        </button>
+<button class="flex-1 relative z-10 text-sm font-bold uppercase tracking-widest text-primary/40 h-full transition-colors duration-500">
+                            Performance / Bulking
+                        </button>
+</div>
+<!-- Macro Shift Visualization -->
+<div class="grid grid-cols-3 gap-4 h-64 items-end px-4">
+<div class="flex flex-col items-center gap-4 group">
+<div class="w-full bg-primary-container/20 rounded-t-xl relative overflow-hidden transition-all duration-500 group-hover:bg-primary-container/30 h-[80%]">
+<div class="absolute bottom-0 left-0 w-full bg-primary h-[60%] rounded-t-xl"></div>
+</div>
+<div class="text-center">
+<p class="text-xs font-bold text-outline uppercase tracking-tighter">Protein</p>
+<p class="text-lg font-serif font-bold">185g</p>
+</div>
+</div>
+<div class="flex flex-col items-center gap-4 group">
+<div class="w-full bg-secondary-container/20 rounded-t-xl relative overflow-hidden transition-all duration-500 group-hover:bg-secondary-container/30 h-[50%]">
+<div class="absolute bottom-0 left-0 w-full bg-secondary h-[40%] rounded-t-xl"></div>
+</div>
+<div class="text-center">
+<p class="text-xs font-bold text-outline uppercase tracking-tighter">Carbs</p>
+<p class="text-lg font-serif font-bold">110g</p>
+</div>
+</div>
+<div class="flex flex-col items-center gap-4 group">
+<div class="w-full bg-tertiary-fixed/20 rounded-t-xl relative overflow-hidden transition-all duration-500 group-hover:bg-tertiary-fixed/30 h-[40%]">
+<div class="absolute bottom-0 left-0 w-full bg-tertiary h-[30%] rounded-t-xl"></div>
+</div>
+<div class="text-center">
+<p class="text-xs font-bold text-outline uppercase tracking-tighter">Fats</p>
+<p class="text-lg font-serif font-bold">45g</p>
+</div>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed bg-surface-container p-4 rounded-xl italic">
+                        *Estimated achievement: <span class="text-primary font-bold">Target Weight in 14 days.</span> High metabolic demand predicted for days 3-5.
+                    </p>
+</div>
+</section>
+<!-- Biometric Sync Status -->
+<section class="lg:col-span-5 flex flex-col gap-6">
+<div class="bg-surface-container-highest rounded-lg p-8 flex-1">
+<div class="flex justify-between items-center mb-8">
+<h2 class="text-2xl font-serif font-bold text-primary">Biometric Sync</h2>
+<div class="flex items-center gap-2 text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-xs font-bold uppercase tracking-widest">Live Connect</span>
+</div>
+</div>
+<div class="space-y-6">
+<!-- Biometric Row -->
+<div class="flex items-center justify-between group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-wider text-outline">Heart Rate</p>
+<p class="text-lg font-bold">62 BPM <span class="text-sm font-normal text-outline-variant">Resting</span></p>
+</div>
+</div>
+<div class="h-8 w-24 bg-surface-container-low rounded overflow-hidden">
+<div class="w-full h-full opacity-20 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+</div>
+</div>
+<!-- Biometric Row -->
+<div class="flex items-center justify-between group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">footprint</span>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-wider text-outline">Steps</p>
+<p class="text-lg font-bold">8,432 <span class="text-sm font-normal text-outline-variant">/ 10k</span></p>
+</div>
+</div>
+<div class="w-24 h-2 bg-surface-container-low rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[84%]"></div>
+</div>
+</div>
+<!-- Biometric Row -->
+<div class="flex items-center justify-between group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">bedtime</span>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-wider text-outline">Sleep</p>
+<p class="text-lg font-bold">5h 12m <span class="text-tertiary text-xs font-bold">Low Alert</span></p>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary">warning</span>
+</div>
+</div>
+</div>
+<!-- Secondary Intelligence Card -->
+<div class="bg-secondary-container p-8 rounded-lg overflow-hidden relative">
+<div class="absolute right-[-10%] bottom-[-10%] opacity-20 transform rotate-12">
+<span class="material-symbols-outlined text-[8rem]" style="font-variation-settings: 'FILL' 1;">analytics</span>
+</div>
+<div class="relative z-10">
+<p class="text-xs font-bold uppercase tracking-[0.2em] text-on-secondary-container mb-2">Alpha Projection</p>
+<h4 class="text-2xl font-serif font-bold text-on-secondary-container mb-4">Metabolic Efficiency: 92%</h4>
+<button class="bg-primary text-white px-6 py-2 rounded-full text-sm font-bold tracking-widest hover:scale-105 transition-transform">VIEW DEEP AUDIT</button>
+</div>
+</div>
+</section>
+</div>
+<!-- Asymmetric Visual Break -->
+<section class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="relative rounded-lg overflow-hidden h-[400px]">
+<img alt="healthy food plate" class="w-full h-full object-cover" data-alt="overhead shot of a vibrant grain bowl with avocado, microgreens, and roasted vegetables on a minimalist ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLq0C-g370ZmJJfAZbQJpiGL8z7WPLwWwKsXX7K45jXOzxHrGkScauReUhRnM7WkFkp8jf3PX6iIRKn7V25wVNquQSfa5-EJWSF97IRLYJ8CxZSl2wJj4J99TgJOQ5nYq07ddFtZhh4gn6xw4CyxAMzpreWm3W8xZ2CndM70ekBQFbQL_SUBy1_ISJrtuRx0MbnfVMs3gUjU6F6cUzXHALSp5vkBz36bcNCgb-UW2QQdOldLV_bUnxu4Qc1QHAg7bssibxXSSUejFF"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-multiply"></div>
+<div class="absolute bottom-8 left-8 bg-white p-6 rounded-lg max-w-[240px] shadow-xl">
+<p class="font-serif italic text-xl text-primary">"The gut is the second brain."</p>
+<p class="text-xs text-outline mt-2 uppercase tracking-widest">Alpha Research Vol. 4</p>
+</div>
+</div>
+<div class="space-y-6">
+<h2 class="text-3xl font-serif font-bold text-primary">Future-Proofing Your Microbiome</h2>
+<p class="text-on-surface-variant leading-relaxed">
+                    By analyzing biometric trends, Alpha Intelligence predicts inflammatory responses before they manifest. Your dinner tonight has been pre-selected to combat the high cortisol detected during your 2:00 PM session.
+                </p>
+<ul class="space-y-4">
+<li class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="text-sm font-semibold">Proactive glucose management based on step variance.</p>
+</li>
+<li class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="text-sm font-semibold">Adaptive hydration reminders synced with heart rate variability.</p>
+</li>
+</ul>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-8 pt-4 bg-[#fbf9f5]/80 dark:bg-emerald-950/80 backdrop-blur-2xl shadow-[0_-10px_40px_-15px_rgba(27,67,50,0.1)] rounded-t-[3rem]">
+<div class="flex flex-col items-center justify-center text-[#1b4332]/40 dark:text-emerald-100/40 p-2 hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined">restaurant</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-widest mt-1">Plate</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1b4332]/40 dark:text-emerald-100/40 p-2 hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-widest mt-1">Audit</span>
+</div>
+<!-- Intelligence is the Active Tab -->
+<div class="flex flex-col items-center justify-center bg-[#dfec60] dark:bg-[#1b4332] text-[#1b4332] dark:text-[#dfec60] rounded-full px-6 py-2 transition-all duration-500 ease-out Active: scale-90 duration-300 cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-widest mt-1">Intelligence</span>
+</div>
+</nav>
+</body></html>

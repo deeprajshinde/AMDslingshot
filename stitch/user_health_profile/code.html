@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#616a00",
+                    "on-secondary-fixed-variant": "#444b00",
+                    "tertiary-fixed-dim": "#ffb4a1",
+                    "on-background": "#1b1c1a",
+                    "primary": "#012d1d",
+                    "inverse-primary": "#a5d0b9",
+                    "on-secondary-fixed": "#1a1d00",
+                    "on-tertiary-fixed-variant": "#7c2e19",
+                    "tertiary": "#4f0e00",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#f5f3ef",
+                    "background": "#fbf9f5",
+                    "on-tertiary-fixed": "#3c0800",
+                    "surface-container-highest": "#e4e2de",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed-dim": "#c2cf47",
+                    "secondary-container": "#dfec60",
+                    "primary-fixed-dim": "#a5d0b9",
+                    "inverse-on-surface": "#f2f0ed",
+                    "error-container": "#ffdad6",
+                    "outline": "#717973",
+                    "on-surface": "#1b1c1a",
+                    "on-tertiary-container": "#f3896d",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#dfec60",
+                    "tertiary-fixed": "#ffdbd2",
+                    "surface-variant": "#e4e2de",
+                    "inverse-surface": "#30312e",
+                    "surface-container": "#efeeea",
+                    "on-primary-fixed": "#002114",
+                    "surface-dim": "#dbdad6",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#c1ecd4",
+                    "secondary": "#5b6300",
+                    "outline-variant": "#c1c8c2",
+                    "surface-bright": "#fbf9f5",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#6d230f",
+                    "surface-container-high": "#eae8e4",
+                    "surface": "#fbf9f5",
+                    "on-surface-variant": "#414844",
+                    "on-primary-fixed-variant": "#274e3d",
+                    "on-primary-container": "#86af99",
+                    "surface-tint": "#3f6653",
+                    "primary-container": "#1b4332"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 40px 60px -10px rgba(27, 28, 26, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface antialiased">
+<!-- Top Navigation -->
+<header class="w-full sticky top-0 z-50 bg-[#fbf9f5] dark:bg-emerald-950/20 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a smiling woman with natural lighting and soft blurred garden background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCu_2-83Y3IBmapIly2XKmej4nXcQzpCge6ZFbreEntoXmmohAGmCRACGivPS6Nk5lNPnCn4CZ-gG8T7Je_AGZO13HBAahX-yPqNxbqX-Mx-O3flVHMATdvM7WaGpVxEZdTBJGOmYMAVMbxLa2zOimnFEJoJCQNCRntd05t1d1E1TbwK99eWVrJujlXlCRi4JA6hoyHmN3d8rVbHIY36ZYS41eOWhyZxJaG8ox6uUeW6eg6dt-LJuv7ThdWAsvGEGLb8R0TsxFNEvb"/>
+</div>
+<span class="font-serif italic text-2xl text-[#1b4332] dark:text-[#a5d0b9]">HealthyKhana</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full text-[#1b4332] hover:bg-[#f5f3ef] transition-colors scale-95 active:duration-150">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 rounded-full text-[#1b4332] hover:bg-[#f5f3ef] transition-colors scale-95 active:duration-150">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12 pb-32">
+<!-- Hero Profile Section -->
+<section class="flex flex-col md:flex-row gap-12 items-end mb-16">
+<div class="relative">
+<div class="w-48 h-64 rounded-xl overflow-hidden editorial-shadow rotate-[-2deg] bg-surface-container-low">
+<img alt="Elena Korbut" class="w-full h-full object-cover" data-alt="Editorial portrait of a woman looking thoughtfully away, soft morning light, high-end lifestyle photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuqYWyv9sldRpVZWd6UxebW5UAqXX9hlyUwtJ3_mAEex1b2Ggi30dfboFPHoIACmQqep2RTK8qtU3SUL_LaqVXsho9KSVfrXjCOQ2SUvSggkIT4UmsxKGO52vzYnTtuuPi2L_u6XKMayy99UngxGsqRTW02747atP_rB_4HZEh3czMdN6sSwGeBFLzYENcpDalPn2JIgYw4Vuy30RsSLAC4Ygnr06IngsciZCTDvt1OsBvCsaqEr-VijNM81iebBde2rLNhKOX8g8S"/>
+</div>
+<div class="absolute -bottom-4 -right-4 bg-secondary-container px-6 py-2 rounded-full editorial-shadow">
+<span class="font-headline italic text-on-secondary-container">Vibrant Vegan</span>
+</div>
+</div>
+<div class="flex-1">
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-primary mb-4">Elena Korbut</h1>
+<p class="text-on-surface-variant max-w-xl leading-relaxed text-lg">
+                    Savoring the rhythm of seasonal greens and mindful movement. Currently on a 14-day streak of botanical hydration.
+                </p>
+<div class="flex flex-wrap gap-3 mt-8">
+<span class="px-5 py-2 rounded-full bg-primary-fixed-dim text-on-primary-fixed-variant text-sm font-semibold uppercase tracking-wider">Level 24 Alchemist</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-semibold uppercase tracking-wider">750km Logged</span>
+</div>
+</div>
+</section>
+<!-- Bento Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[240px]">
+<!-- Weekly Calories Chart -->
+<div class="md:col-span-8 bg-surface-container-low rounded-lg p-8 relative overflow-hidden flex flex-col justify-between">
+<div>
+<h3 class="font-headline text-2xl font-bold text-primary">Nourishment Balance</h3>
+<p class="text-on-surface-variant font-medium">Daily average: 1,840 kcal</p>
+</div>
+<div class="flex items-end justify-between h-32 gap-2 mt-4">
+<div class="flex-1 bg-primary/10 rounded-t-full relative group">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-full transition-all duration-700 h-[60%]"></div>
+<span class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold opacity-0 group-hover:opacity-100">M</span>
+</div>
+<div class="flex-1 bg-primary/10 rounded-t-full relative group">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-full transition-all duration-700 h-[85%]"></div>
+</div>
+<div class="flex-1 bg-primary/10 rounded-t-full relative group">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-full transition-all duration-700 h-[70%]"></div>
+</div>
+<div class="flex-1 bg-secondary-container/30 rounded-t-full relative group">
+<div class="absolute bottom-0 w-full bg-secondary rounded-t-full transition-all duration-700 h-[95%]"></div>
+</div>
+<div class="flex-1 bg-primary/10 rounded-t-full relative group">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-full transition-all duration-700 h-[55%]"></div>
+</div>
+<div class="flex-1 bg-primary/10 rounded-t-full relative group">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-full transition-all duration-700 h-[40%]"></div>
+</div>
+<div class="flex-1 bg-primary/10 rounded-t-full relative group border-2 border-primary/20">
+<div class="absolute bottom-0 w-full bg-primary/20 rounded-t-full h-[10%] animate-pulse"></div>
+</div>
+</div>
+</div>
+<!-- Water Intake Circle -->
+<div class="md:col-span-4 bg-primary-container rounded-lg p-8 flex flex-col items-center justify-center text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-9xl" data-icon="water_drop">water_drop</span>
+</div>
+<div class="relative w-32 h-32 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90">
+<circle class="text-white/10" cx="64" cy="64" fill="transparent" r="58" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-secondary-fixed" cx="64" cy="64" fill="transparent" r="58" stroke="currentColor" stroke-dasharray="364.4" stroke-dashoffset="91.1" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-3xl font-bold text-on-primary">2.4</span>
+<span class="text-[10px] text-on-primary/60 uppercase tracking-widest">Liters</span>
+</div>
+</div>
+<p class="text-on-primary mt-6 font-headline italic">Hydration Peak</p>
+<p class="text-on-primary-container text-xs mt-1 italic">92% of your daily goal achieved</p>
+</div>
+<!-- Weight Progress -->
+<div class="md:col-span-4 bg-surface-container-highest rounded-lg p-8 flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary" data-icon="monitor_weight">monitor_weight</span>
+<span class="text-primary font-bold bg-white/50 px-3 py-1 rounded-full text-xs">-1.2kg this month</span>
+</div>
+<div>
+<h4 class="text-4xl font-bold text-primary">64.5<span class="text-lg font-normal ml-1">kg</span></h4>
+<p class="text-on-surface-variant text-sm mt-2">Steady progress toward your target of 62kg. Mindful consistency is key.</p>
+</div>
+</div>
+<!-- Macro Distribution -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-lg p-8 editorial-shadow grid grid-cols-3 gap-8">
+<div class="flex flex-col gap-2">
+<div class="h-1 bg-secondary-container rounded-full w-full relative">
+<div class="absolute left-0 top-0 h-full bg-secondary w-3/4 rounded-full"></div>
+</div>
+<span class="text-xs uppercase tracking-widest font-bold text-on-surface-variant">Carbs</span>
+<span class="text-xl font-bold text-primary">180g</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="h-1 bg-tertiary-fixed rounded-full w-full relative">
+<div class="absolute left-0 top-0 h-full bg-tertiary w-1/2 rounded-full"></div>
+</div>
+<span class="text-xs uppercase tracking-widest font-bold text-on-surface-variant">Protein</span>
+<span class="text-xl font-bold text-primary">65g</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="h-1 bg-primary-fixed rounded-full w-full relative">
+<div class="absolute left-0 top-0 h-full bg-primary w-1/3 rounded-full"></div>
+</div>
+<span class="text-xs uppercase tracking-widest font-bold text-on-surface-variant">Fats</span>
+<span class="text-xl font-bold text-primary">42g</span>
+</div>
+<div class="col-span-3 pt-4 border-t border-outline-variant/10">
+<p class="text-sm italic text-on-surface-variant">Your intake is perfectly aligned with the <span class="text-primary font-bold">Vibrant Vegan</span> profile.</p>
+</div>
+</div>
+</div>
+<!-- Settings & Preferences Section -->
+<section class="mt-24">
+<h2 class="font-headline text-4xl font-bold text-primary mb-12">Your Sanctuary</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-8">
+<div class="group cursor-pointer flex items-center justify-between p-6 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary" data-icon="restaurant_menu">restaurant_menu</span>
+<div>
+<h4 class="font-bold text-primary">Dietary Architecture</h4>
+<p class="text-sm text-on-surface-variant">Modify your vegan filters and allergies</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="group cursor-pointer flex items-center justify-between p-6 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary" data-icon="notifications_active">notifications_active</span>
+<div>
+<h4 class="font-bold text-primary">Mindful Prompts</h4>
+<p class="text-sm text-on-surface-variant">Control meal and hydration reminders</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<div class="space-y-8">
+<div class="group cursor-pointer flex items-center justify-between p-6 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary" data-icon="security">security</span>
+<div>
+<h4 class="font-bold text-primary">Privacy &amp; Data</h4>
+<p class="text-sm text-on-surface-variant">Manage your biometrics and health logs</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="group cursor-pointer flex items-center justify-between p-6 rounded-lg bg-tertiary-fixed/30 hover:bg-tertiary-fixed/50 transition-colors">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-tertiary" data-icon="logout">logout</span>
+<div>
+<h4 class="font-bold text-tertiary">Step Away</h4>
+<p class="text-sm text-tertiary/60">Sign out of your account</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-8 pt-4 bg-[#fbf9f5]/80 dark:bg-emerald-950/80 backdrop-blur-2xl shadow-[0_-10px_40px_-15px_rgba(27,67,50,0.1)]">
+<a class="flex flex-col items-center justify-center text-[#1b4332]/40 dark:text-emerald-100/40 p-2 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-widest mt-1">Today</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1b4332]/40 dark:text-emerald-100/40 p-2 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="restaurant">restaurant</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-widest mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1b4332]/40 dark:text-emerald-100/40 p-2 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-widest mt-1">Library</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#dfec60] dark:bg-[#1b4332] text-[#1b4332] dark:text-[#dfec60] rounded-full px-6 py-2 transition-all duration-500 ease-out active:scale-90 active:duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

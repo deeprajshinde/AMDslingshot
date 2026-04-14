@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HealthyKhana - Discover Meals</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#616a00",
+                        "on-secondary-fixed-variant": "#444b00",
+                        "tertiary-fixed-dim": "#ffb4a1",
+                        "on-background": "#1b1c1a",
+                        "primary": "#012d1d",
+                        "inverse-primary": "#a5d0b9",
+                        "on-secondary-fixed": "#1a1d00",
+                        "on-tertiary-fixed-variant": "#7c2e19",
+                        "tertiary": "#4f0e00",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f5f3ef",
+                        "background": "#fbf9f5",
+                        "on-tertiary-fixed": "#3c0800",
+                        "surface-container-highest": "#e4e2de",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#c2cf47",
+                        "secondary-container": "#dfec60",
+                        "primary-fixed-dim": "#a5d0b9",
+                        "inverse-on-surface": "#f2f0ed",
+                        "error-container": "#ffdad6",
+                        "outline": "#717973",
+                        "on-surface": "#1b1c1a",
+                        "on-tertiary-container": "#f3896d",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#dfec60",
+                        "tertiary-fixed": "#ffdbd2",
+                        "surface-variant": "#e4e2de",
+                        "inverse-surface": "#30312e",
+                        "surface-container": "#efeeea",
+                        "on-primary-fixed": "#002114",
+                        "surface-dim": "#dbdad6",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#c1ecd4",
+                        "secondary": "#5b6300",
+                        "outline-variant": "#c1c8c2",
+                        "surface-bright": "#fbf9f5",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#6d230f",
+                        "surface-container-high": "#eae8e4",
+                        "surface": "#fbf9f5",
+                        "on-surface-variant": "#414844",
+                        "on-primary-fixed-variant": "#274e3d",
+                        "on-primary-container": "#86af99",
+                        "surface-tint": "#3f6653",
+                        "primary-container": "#1b4332"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-italic { font-style: italic; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body min-h-screen pb-32">
+<header class="w-full sticky top-0 z-50 bg-[#fbf9f5] dark:bg-emerald-950/20 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/15">
+<img alt="user profile photo" class="w-full h-full object-cover" data-alt="close-up portrait of a professional male chef smiling in a bright kitchen setting, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7W_rI7qqg6rgBXFwF4uwqE9Egwm071PAJ5LPEvY18LvJGfhQfZHJtSARrkDyhhRhCdUfapin6e5fFiNQedCd6ISCjpp6Ca5r0phgTjxZKsDb7Q3-sFRygJib_FnO_4gZBLCYJ-njfYhIAykGu5aHzsphgJdHjX-7YcpmrWssLJdcs0c915QiMDj0NVC63GimSQh24GRlpT4L1Cjc-2G6eYUTrFqxHWlLwptdqIwa_H-OidMVpzw6A5JjVOEoLR6j2VrXxhjYXTQkb"/>
+</div>
+<h1 class="font-serif italic text-2xl text-[#1b4332] dark:text-[#a5d0b9] font-bold tracking-tight">HealthyKhana</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-[#1b4332] hover:bg-[#f5f3ef] dark:hover:bg-emerald-900/30 transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</header>
+<main class="px-6 max-w-7xl mx-auto space-y-10 mt-6">
+<section class="space-y-4">
+<div class="relative group">
+<div class="absolute inset-y-0 left-5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</div>
+<input class="w-full bg-surface-container-high border-none rounded-xl py-5 pl-14 pr-6 focus:ring-0 focus:border-b-2 focus:border-secondary transition-all text-on-surface placeholder:text-on-surface-variant/60 shadow-sm" placeholder="Search for recipes, ingredients..." type="text"/>
+</div>
+</section>
+<section class="space-y-6">
+<div class="flex items-end justify-between">
+<div>
+<span class="text-tertiary font-bold tracking-widest uppercase text-[10px]">Curation</span>
+<h2 class="text-4xl font-headline font-bold text-primary mt-1">Explore Library</h2>
+</div>
+<button class="text-primary font-bold text-sm border-b border-primary/20 pb-1">Filter All</button>
+</div>
+<div class="flex gap-4 overflow-x-auto hide-scrollbar pb-2">
+<button class="flex-none px-6 py-3 rounded-full bg-secondary-container text-on-secondary-container font-bold text-sm flex items-center gap-2 scale-102 shadow-sm">
+<span class="material-symbols-outlined text-sm" data-icon="star">star</span>
+                    High Protein
+                </button>
+<button class="flex-none px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-semibold text-sm hover:bg-surface-container-high transition-colors">
+                    Under 30 Mins
+                </button>
+<button class="flex-none px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-semibold text-sm hover:bg-surface-container-high transition-colors">
+                    Immunity Boost
+                </button>
+<button class="flex-none px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-semibold text-sm hover:bg-surface-container-high transition-colors">
+                    Vegan Comfort
+                </button>
+<button class="flex-none px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-semibold text-sm hover:bg-surface-container-high transition-colors">
+                    Low Carb
+                </button>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="flex flex-col gap-4 group">
+<div class="relative rounded-lg overflow-hidden h-72 shadow-lg transition-transform duration-500 group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="top-down shot of a colorful poke bowl with salmon, avocado, edamame and radishes on a textured ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5nW48FWhS1qNOq4ciaA7rHPteXAxcjlzhzEqdbnRDBfE5OHODxJg0T_3Jr3f5K4FGuCOHpjbylWHuoe6DO3wR62v4Gy2VEonWlY9SWFtE53A4U6dOUnc_xGW8QwVxAE8OuIh3XrFH4BxLt8mL4LniZkHwHpoX9tpcmGQhB2ChMbUVHNCpR1cijWBBNP05FEhfNcKm2ppwvyoN6b6l-kkJwndaEfz_zElP8k3LGqKgfauc49KtsGX1oXf6VQ1zHL85xSQ0WfqDAAFL"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-primary text-xs font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-xs" data-icon="timer">timer</span>
+                        15 Mins
+                    </div>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-headline font-bold text-primary leading-tight">Wild Atlantic Poke</h3>
+<span class="text-on-surface-variant/70 text-xs font-bold py-1 px-2 bg-surface-container-low rounded-md">340 kcal</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-[90%]">Sustainably sourced salmon paired with ginger-soy glaze and fresh garden greens.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group">
+<div class="relative rounded-lg overflow-hidden h-72 shadow-lg transition-transform duration-500 group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="close-up of a vibrant mediterranean salad bowl with hummus, roasted chickpeas, kale and pomegranate seeds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAydVqPBqdbXvSbo15Vhp6AdiQdPPQLeB1u5FUhNcMsfM2XBCFeBKSLYR6poQ7GRY7MSeiB0u7MkOl9LBbXMeMrzYbD2__9meQPW2qkx3YwRpsbX3m8tU7z84p1r8s0L3-W7p9af1nIJ3W_WAMKPWIks0DwLXTyS94EjhmkiUxsahZUibrTHHFtvWYfaV6alyWqWn8p6ji1n9zP4XuUA649Vhm0WFuZ3kAqaMxDxs8brOBdE4mQ-IQNgnmzNlzQBJgKwO8lLPBjspF"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-primary text-xs font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-xs" data-icon="timer">timer</span>
+                        22 Mins
+                    </div>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-headline font-bold text-primary leading-tight">Goddess Grain Bowl</h3>
+<span class="text-on-surface-variant/70 text-xs font-bold py-1 px-2 bg-surface-container-low rounded-md">410 kcal</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-[90%]">Ancient grains, sprouted lentils, and a citrus-tahini dressing for sustained energy.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group">
+<div class="relative rounded-lg overflow-hidden h-72 shadow-lg transition-transform duration-500 group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="artisanal avocado toast on sourdough bread topped with microgreens and poached egg, dramatic side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3BnvTauJhRRhRaEW9UJST9sVNugNIwRtOG8WmGcEOI8Tu45pktHGpWuF9RGMIXJRw-r_PQGJmk9H5kjoCRDYW7gOraVAdcOCmhzdreeLBKjWI5ldkgGs7zPpca-PIzDpdiHOUGEtr8ZPbDzkNHJWyRkDbOfLXhkYnlLackAU_oDweN7k0BOzYmueCRfNWCh_3YLo5R93ddcQunI7rxNS1GJv5vg4xSKd6A3PknK_XvjiAtwnKsnUnQDtOJdOSMwM1rSHbAJwPovdu"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-primary text-xs font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-xs" data-icon="timer">timer</span>
+                        10 Mins
+                    </div>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-headline font-bold text-primary leading-tight">Sourdough Sunrise</h3>
+<span class="text-on-surface-variant/70 text-xs font-bold py-1 px-2 bg-surface-container-low rounded-md">280 kcal</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-[90%]">Organic sourdough with smashed avocado, hemp seeds, and a soft-boiled farm egg.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group">
+<div class="relative rounded-lg overflow-hidden h-72 shadow-lg transition-transform duration-500 group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="roasted salmon fillet with green asparagus and lemon slices on a dark slate background, professional culinary lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaLi2OYKT8Qhh2TFTDrTIaaSsVvdD693r1eEUiPz4W-HdmzdyxeYyWKRrAjER0oJUHw6EQ-jvNAFmD3cy0u1qFFaqGMaO2pYUll8J6qWkLRJ0AlfBJ-VpWWwCgGskH40pyoQVtVuCAjf6veCbmw5r5a_DQnVmof51AZnyyNhyL2OSwqUiUzaesmawU4RJZwB8ibwNfnNBig_Q_p6wKb5B3Pvj1D9BRytiguEPuj0neWCQpEoFQTDdSjGgn6_P6zMvHgMeY5pEqg2GK"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-primary text-xs font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-xs" data-icon="timer">timer</span>
+                        30 Mins
+                    </div>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-headline font-bold text-primary leading-tight">Herbed Cedar Salmon</h3>
+<span class="text-on-surface-variant/70 text-xs font-bold py-1 px-2 bg-surface-container-low rounded-md">520 kcal</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-[90%]">Omega-rich salmon roasted with thyme, rosemary and charred lemon asparagus.</p>
+</div>
+</div>
+</section>
+<section class="bg-primary-container rounded-lg p-10 flex flex-col md:flex-row items-center gap-10 overflow-hidden relative">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
+<div class="flex-1 space-y-6 relative z-10 text-left">
+<h2 class="text-4xl font-headline font-bold text-on-primary">Personalized Chef Recommendations</h2>
+<p class="text-on-primary-container text-lg max-w-lg">Based on your activity this week, we've curated a high-recovery meal plan to keep your immunity strong.</p>
+<button class="bg-secondary-fixed text-on-secondary-fixed px-8 py-4 rounded-DEFAULT font-bold text-md hover:scale-105 transition-transform">Get My Plan</button>
+</div>
+<div class="flex-1 flex gap-4 relative z-10">
+<div class="w-1/2 rounded-lg h-64 overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="vibrant green vegetable soup in a bowl with cream drizzle and fresh herbs, artistic top-down view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo6JefmUc0aGBgtpTPXckImbb9ObNW3FZ5l-ccPajDpEH5TCqgE5hVxULYYF83IGAGlFq8jl4QBbhflE8XzHJrwLf7zJNkcRtfS2teIc09jSavb55sv9a68i34urLlRzerwegYZDEEBvrEnZf6Gyjj40anuCvlGGlCC8CA65T0rzJpItYobNwtOob_7wb72y2VIOPuqclpFYhwHJfatj1pGPSwegxNM8YbXDxvYb3DCP-xbb4i-B7ov6sZXX1px-NSqfELL7OWQ8OJ"/>
+</div>
+<div class="w-1/2 rounded-lg h-64 overflow-hidden mt-12 shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="fresh caprese salad with heirloom tomatoes, mozzarella, and basil on a rustic platter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpQCNqh6tvJrHZA2DrinEKTIG8M1uC_5LzM5w3SWOX0sbhRkb32Ud9pPYRSJlXvG44_HSiPlXF-Lil8To_uFuxX91s3EWELlcLgR6KetAP72G_PjWzme7SEqq3Cl6n8yE2Odo-ny8UDQ98tNpIA9ffsLSmq8Jyt6_kGLGCcnPwLU4tybTVAfKpc6o0mSZc3ySOVR2I4YHEwGxWRK6AAFtNFRIcbkbjaCYwVyhl4goXGQjrr0o6dMydOEnC5Z5unTHPOgHGnbbC16ft"/>
+</div>
+</div>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-8 pt-4 bg-[#fbf9f5]/80 dark:bg-emerald-950/80 backdrop-blur-2xl shadow-[0_-10px_40px_-15px_rgba(27,67,50,0.1)] rounded-t-[3rem] border-none">
+<a class="flex flex-col items-center justify-center text-[#1b4332]/40 dark:text-emerald-100/40 p-2 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-widest mt-1">Today</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#dfec60] dark:bg-[#1b4332] text-[#1b4332] dark:text-[#dfec60] rounded-full px-6 py-2 transition-all duration-500 ease-out scale-105" href="#">
+<span class="material-symbols-outlined" data-icon="restaurant">restaurant</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-widest mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1b4332]/40 dark:text-emerald-100/40 p-2 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-widest mt-1">Library</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1b4332]/40 dark:text-emerald-100/40 p-2 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-sans text-[11px] font-semibold uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+</body></html>
